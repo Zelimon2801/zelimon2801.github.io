@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Нити судьбы — PokusNik Games</title>
+<meta name="description" content="Нити судьбы (Threads of Fate) — PokusNik Games"/>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style">
+<style>
+:root{
+  --bg:#000000;
+  --gold: rgb(255,215,0);
+  --gold-opaque: rgba(255,215,0,0.95);
+  --muted: rgba(255,255,255,0.08);
+  --card: rgba(255,255,255,0.03);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--gold);-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+.header{display:flex;justify-content:space-between;align-items:center;padding:8px 0}
+.brand{font-weight:700;font-size:18px;letter-spacing:0.6px}
+.lang{background:rgba(255,255,255,0.06);border-radius:999px;padding:6px 10px;font-size:13px;color:var(--gold);border:1px solid rgba(255,215,0,0.08)}
+
+/* Hero */
+.hero{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:28px}
+.hero-left{flex:1 1 420px;min-width:280px}
+.title{font-size:44px;line-height:1;margin:0 0 8px;font-weight:800;color:var(--gold);text-shadow:0 0 18px rgba(255,215,0,0.08)}
+.tag{color:var(--gold);opacity:0.95;margin:12px 0 18px;font-size:16px}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn-gold{background:var(--gold);color:#000;padding:12px 18px;border-radius:14px;font-weight:700;display:inline-block}
+.btn-outline{border:1px solid var(--gold);color:var(--gold);padding:10px 16px;border-radius:12px;background:transparent}
+
+/* Trailer card */
+.trailer{flex:1 1 420px;min-width:260px;border-radius:12px;overflow:hidden;background:var(--card);border:1px solid rgba(255,255,255,0.04)}
+
+/* Features */
+.section{margin-top:56px}
+.section h2{font-size:24px;margin:0 0 16px;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
+.card h3{margin:0 0 8px;font-size:18px;color:var(--gold)}
+.card p{margin:0;color:rgba(255,215,0,0.92);font-size:14px;line-height:1.45}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:12px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;display:block}
+
+/* Roadmap */
+.roadmap .item{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04)}
+.roadmap .stage{font-weight:700;color:var(--gold);margin-bottom:6px}
+
+/* Footer */
+.footer{margin-top:48px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.small{font-size:13px;color:var(--gold)}
+
+/* Responsive */
+@media(max-width:720px){
+  .title{font-size:32px}
+  .hero{flex-direction:column}
+  .trailer{order:-1;width:100%}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="brand">PokusNik Games</div>
+    <div class="lang">EN</div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-left">
+      <h1 class="title">Нити судьбы</h1>
+      <div class="tag">Жизнь — это выбор. Каждый год.</div>
+
+      <div class="cta-row">
+        <a class="btn-gold" href="#steam">В желаемое в Steam</a>
+      </div>
+    </div>
+
+    <div class="trailer">
+      <iframe width="100%" height="260" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Trailer" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <section class="section">
+    <h2>Почему тебе понравится</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Ветка судьбы</h3>
+        <p>Твои решения имеют огромное значение, меняя будущие ситуации и концовки.</p>
+      </div>
+      <div class="card">
+        <h3>Случайные события</h3>
+        <p>Каждое прохождение уникально</p>
+      </div>
+      <div class="card">
+        <h3>Достижения и альбом памяти</h3>
+        <p>Открывай достижения, собирай памятные кадры и смотри, как выборы меняют твою историю.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Скриншоты</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/seed/thread-1/800/600" alt="s1">
+      <img src="https://picsum.photos/seed/thread-2/800/600" alt="s2">
+      <img src="https://picsum.photos/seed/thread-3/800/600" alt="s3">
+      <img src="https://picsum.photos/seed/thread-4/800/600" alt="s4">
+    </div>
+  </section>
+
+  <section class="section roadmap">
+    <h2>Дорожная карта</h2>
+    <div class="grid">
+      <div class="item"><div class="stage">v0.9 — Demo</div><div>Первые 10 лет, альбом памяти, базовые достижения.</div></div>
+      <div class="item"><div class="stage">v1.0 — Release</div><div>Новые истории, баланс, оптимизация.</div></div>
+      <div class="item"><div class="stage">v1.1+ — Updates</div><div>Еженедельные правки, новые события, косметические апдейты.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Ссылки</h2>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn-gold" href="#steam">Steam</a>
+      <a class="btn-outline" href="#download">Google Play</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>FAQ</h2>
+    <div class="card"><strong>Будет ли поддержка RU и EN?</strong><p>Да, переключатель языка на странице и в игре.</p></div>
+    <div style="height:10px"></div>
+    <div class="card"><strong>Это игра с перезапусками?</strong><p>Да. Каждое прохождение — новая цепочка сцен; смерть — часть пути и статистики.</p></div>
+  </section>
+
+  <footer class="footer">
+    <div class="small">© PokusNik Games. Все права защищены.</div>
+    <div class="small">pokusnikgames.ru</div>
+  </footer>
+</div>
+</body>
+</html>
